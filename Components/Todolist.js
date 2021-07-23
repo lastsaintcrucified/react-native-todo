@@ -14,9 +14,8 @@ const ToDoList = () =>{
         setText("");
     }
     const handleDelete = () => {
-        const updatedList = list;
-        updatedList.pop();
-        console.log(updatedList)
+        list.pop();
+        const updatedList = [...list];
         setList(updatedList)
     }
     
